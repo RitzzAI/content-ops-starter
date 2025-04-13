@@ -1,19 +1,11 @@
 ---
-import LoanForm from "@/components/sections/LoanForm";
-
-export default function Home() {
-  return (
-    <form name="loan-application" method="POST" data-netlify="true">
-      <Hero />
-      {/* other sections */}
-      <LoanForm />
-    </form>
-  );
-}
-
 title: Home
 slug: /
 sections:
+  - type: Hero
+
+  - type: LoanForm
+
   - type: GenericSection
     title:
       text: Unblock your team boost your time to production
@@ -24,6 +16,9 @@ sections:
       A Netlify Create website is a git repo that you own. Every code commit is
       instantly reflected in the visual editor and since every visual edit is a
       git commit, git workflows and collaboration just work.
+    actions:
+      - label: Get started
+        url: /
     actions:
       - label: Get started
         altText: ''
