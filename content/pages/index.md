@@ -1,4 +1,16 @@
 ---
+import LoanForm from "@/components/sections/LoanForm";
+
+export default function Home() {
+  return (
+    <form name="loan-application" method="POST" data-netlify="true">
+      <Hero />
+      {/* other sections */}
+      <LoanForm />
+    </form>
+  );
+}
+
 title: Home
 slug: /
 sections:
